@@ -25,7 +25,7 @@ class process_commands {
 
         void execute_cmd(void) {
             #ifdef __linux__
-                system(linux_command.c_str());
+                system((linux_command + " >/dev/null 2>/dev/null").c_str());
             #elif _WIN32
                 system(windows_command.c_str());
             #else

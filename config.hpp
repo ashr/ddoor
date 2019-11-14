@@ -1,3 +1,7 @@
+#define FAKE_NAME "test123"
+#define DOMAIN "ou.is"
+#define MAGIC_HEADER "2163" // decoded to !c
+
 vector <string> dns_resolvers = {
     "1.1.1.1",   
 	"8.8.8.8",    
@@ -11,5 +15,3 @@ vector <string> dns_resolvers = {
     "91.239.100.100", 
     "89.233.43.71"
 };
-string domain = "ou.is";
-string magic_header = "2163"; // decoded to !c
