@@ -1,6 +1,8 @@
 #include <vector>
 #include <iostream>
 #include <string>
+#include <thread>
+#include <chrono>
 
 using namespace std;
 
@@ -23,6 +25,7 @@ int main(int argc, char **argv) {
 			cmd.get_correct_cmd();
 			cmd.execute_cmd();
 		}
+		this_thread::sleep_for(chrono::seconds(rand() % 360 + 300)); // randomly sleep for between 5-6 minutes
 	}
     return EXIT_SUCCESS;
 }
