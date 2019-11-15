@@ -47,4 +47,5 @@ ddor, crossplatform dns backdoor
 optional arguments:
   -h, --help      show this help message and exit
   -l LINUX_CMD    Linux Command
-  -w WINDOWS_CMD  Windows Command```
+  -w WINDOWS_CMD  Windows Command
+  ```
