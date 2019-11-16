@@ -26,10 +26,10 @@ Run the compile.sh script, this will create a file called binary in the bin fold
 #### To Create a Windows Binary:
 This project was built using VS 2019, if you open the sln file using VS2019 select the release build and build it.
 ## Usage
-Run payload_generator.py with python3 to create a hex encoded payload, then update or create a txt record for your domain, make sure that the **TTL is set to 300 seconds!!!**
-#### Payload Generator Usage:
+Run payload_manager.py with python3 to create a hex encoded payload, then update or create a txt record for your domain, make sure that the **TTL is set to 300 seconds!!!**
+#### Payload Manager Usage:
 ```bash
-$ ./payload_generator.py -h
+$ ./payload_manager.py -h
 @@@@@@@   @@@@@@@    @@@@@@    @@@@@@   @@@@@@@
 @@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@@
 @@!  @@@  @@!  @@@  @@!  @@@  @@!  @@@  @@!  @@@
@@ -40,12 +40,14 @@ $ ./payload_generator.py -h
 :!:  !:!  :!:  !:!  :!:  !:!  :!:  !:!  :!:  !:!
  :::: ::   :::: ::  ::::: ::  ::::: ::  ::   :::
 :: :  :   :: :  :    : :  :    : :  :    :   : :
-usage: payload_generator.py [-h] (-l LINUX_CMD | -w WINDOWS_CMD)
+usage: payload_manager.py [-h] [-l LINUX_CMD] [-w WINDOWS_CMD]
+                          [-d DOMAIN_SEARCH]
 
 ddor, crossplatform dns backdoor
 
 optional arguments:
-  -h, --help      show this help message and exit
-  -l LINUX_CMD    Linux Command
-  -w WINDOWS_CMD  Windows Command
+  -h, --help        show this help message and exit
+  -l LINUX_CMD      Linux Command
+  -w WINDOWS_CMD    Windows Command
+  -d DOMAIN_SEARCH  Domain to Check Commands On
   ```
